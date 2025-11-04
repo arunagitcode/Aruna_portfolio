@@ -1,0 +1,136 @@
+.timeline-section {
+  background: radial-gradient(circle at top left, #101020, #0d0d1a);
+  color: #fff;
+  padding: 4rem 1rem;
+  /* border-radius: 20px; */
+}
+
+.timeline-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Timeline base */
+.timeline-container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-left: 3px solid rgba(0, 198, 255, 0.5);
+  max-width: 900px;
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+/* .timeline-dot {
+  position: absolute;
+  top: 8px;
+  left: -11px;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.8);
+} */
+
+/* Card design */
+.timeline-content {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 150, 255, 0.2);
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-align: justify;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 188, 212, 0.4);
+}
+
+.timeline-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.timeline-content h5 {
+  color: #00c6ff;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.duration {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.client {
+  color: #ddd;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-content ul {
+  padding-left: 1.2rem;
+}
+
+.timeline-content li {
+  margin-bottom: 0.4rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+.tech {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #89cff0;
+  font-weight: 500;
+}
+
+/* ✅ Mobile responsive layout */
+@media (max-width: 768px) {
+  .timeline-section {
+    padding: 3rem 1rem;
+  }
+
+  .timeline-container {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-content {
+    border-left: 4px solid #00c6ff;
+    padding-left: 1.2rem;
+    margin-left: 0.5rem;
+  }
+
+  .timeline-content:hover {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content ul li {
+    font-size: 0.95rem;
+  }
+}

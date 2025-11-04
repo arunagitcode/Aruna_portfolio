@@ -1,0 +1,127 @@
+.about-section {
+  /* background: linear-gradient(135deg, #0a0a0a, #151515); */
+  background: radial-gradient(circle at top left, #1a1a2e, #16213e);
+
+  color: #eaeaea;
+  position: relative;
+  overflow: hidden;
+}
+
+.about_cont{
+  text-align: justify;
+}
+/* Accent gradient blobs */
+.bg-accent-shape {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.35;
+  z-index: 0;
+}
+.shape1 {
+  top: -80px;
+  left: -100px;
+  background: #7b2ff7;
+}
+.shape2 {
+  bottom: -100px;
+  right: -80px;
+  background: #00bcd4;
+}
+
+/* Card Styling */
+.about-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 2;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Frame with angled edges */
+.image-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.angled-photo-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  transform: rotate(-3deg);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.4);
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, #7b2ff7, #00bcd4) border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.angled-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: rotate(3deg);
+  border-radius: 12px;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(90deg, #7b2ff7, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph Styling */
+.about-sub {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+}
+
+.about-text {
+  color: #b8b8b8;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Button */
+.about-btn {
+  background: linear-gradient(90deg, #7b2ff7, #00bcd4);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .angled-photo-wrapper {
+    transform: rotate(0deg);
+    max-width: 220px;
+  }
+  .angled-photo {
+    transform: rotate(0deg);
+  }
+  .about-card {
+    text-align: center;
+  }
+  .about-btn {
+    margin-top: 1rem;
+  }
+}
