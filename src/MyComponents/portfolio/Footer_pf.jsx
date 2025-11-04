@@ -7,7 +7,7 @@ function Footer_pf() {
     <footer className="footer-section mt-4">
       <div className="footer-container">
         <h2 className="footer-logo">
-          Aruna<span>Portfolio</span>
+          Atchiyamma <span>Portfolio</span>
         </h2>
 
         <p className="footer-tagline">
