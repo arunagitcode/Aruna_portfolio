@@ -2,7 +2,7 @@
   /* background: linear-gradient(135deg, #0a0a0a, #151515); */
   background: radial-gradient(circle at top left, #1a1a2e, #16213e);
 
-  color: #eaeaea;
+  /* color: #eaeaea; */
   position: relative;
   overflow: hidden;
 }
@@ -84,11 +84,11 @@
 /* Paragraph Styling */
 .about-sub {
   font-size: 1.1rem;
-  color: #cfcfcf;
+  /* color: #cfcfcf; */
 }
 
 .about-text {
-  color: #b8b8b8;
+  /* color: #b8b8b8; */
   font-size: 1rem;
   line-height: 1.8;
 }

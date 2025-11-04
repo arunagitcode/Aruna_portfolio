@@ -41,14 +41,14 @@ function About_pf() {
 
               {/* Content Section */}
               <Col md={7} className="about_cont">
-                <Card.Body className="p-5">
+                <Card.Body className="p-4">
                   <motion.h2
                     initial={{ x: 40, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="fw-bold mb-3 about-title text-gradient"
+                    className="fw-bold mb-3 about-title text-gradient text-center"
                   >
-                    👩‍💻 About Me
+                    About Me
                   </motion.h2>
 
                   <p className="about-sub">
@@ -85,7 +85,7 @@ function About_pf() {
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="about-btn mt-4 "
+                    className="about-btn mt-4"
                   >
                     View My Work 🚀
                   </motion.button>
