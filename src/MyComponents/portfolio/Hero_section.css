@@ -6,15 +6,15 @@
   align-items: center;
   justify-content: center;
   background: radial-gradient(circle at top left, #1a1a2e, #16213e);
-    /* background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #84848F 100%); */
+    
 
   color: #fff;
   overflow: hidden;
-  padding: 8rem 2rem 4rem; /* 👈 top padding fixed for header overlap */
+  padding: 8rem 2rem 4rem; 
   box-sizing: border-box;
 }
 
-/* ---------- Hero Text ---------- */
+
 .hero-content {
   max-width: 600px;
   text-align: justify;
@@ -60,7 +60,7 @@
   box-shadow: 0 8px 25px rgba(0, 188, 212, 0.6);
 }
 
-/* ---------- Hero Image ---------- */
+
 .hero-image-wrapper {
   position: relative;
   width: 340px;
@@ -106,7 +106,7 @@
   transform: scale(1.05);
 }
 
-/* ---------- Animation ---------- */
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -116,10 +116,10 @@
   }
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 768px) {
   .carousel_cont {
-    padding-top: 7rem; /* 👈 more top space for header in mobile */
+    padding-top: 7rem; 
     text-align: center;
   }
 

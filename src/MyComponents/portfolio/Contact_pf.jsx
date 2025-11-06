@@ -1,47 +1,81 @@
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import "./contact.css";
 
 function Contact_pf() {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_b9zk1zq",
+        "template_21jm9un",
+        formRef.current,
+        "_K1NGgeN5975QKQ9C"
+      )
+      .then(
+        () => {
+          alert("✅ Message Sent Successfully!");
+          formRef.current.reset();
+        },
+        () => {
+          alert("❌ Error sending message. Try again!");
+        }
+      );
+  };
+
   return (
-    <>
-      <h1 className="text-center mt-4">Get in touch with me </h1>
-      <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-        <Form.Control
-          placeholder="Username"
-          aria-label="Username"
-          aria-describedby="basic-addon1"
-        />
-      </InputGroup>
+    <div className="contact-outer mt-4" id="contact">
+      <h1 className="text-center contact-title">Get in touch with me</h1>
 
-      <InputGroup className="mb-3">
-        <Form.Control
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
-      </InputGroup>
+      <Card className="contact-card p-4 mt-4">
+        <Card.Body>
+          <form ref={formRef} onSubmit={sendEmail}>
+            <div className="floating-group mb-4">
+              <Form.Control name="name" required className="floating-input" />
+              <label className="floating-label">Your Name</label>
+            </div>
 
-      <Form.Label htmlFor="basic-url">Your vanity URL</Form.Label>
-      <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon3">
-          https://example.com/users/
-        </InputGroup.Text>
-        <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-      </InputGroup>
+            <div className="floating-group mb-4">
+              <Form.Control
+                name="email"
+                required
+                type="email"
+                className="floating-input"
+              />
+              <label className="floating-label">Your Email</label>
+            </div>
 
-      <InputGroup className="mb-3">
-        <InputGroup.Text>$</InputGroup.Text>
-        <Form.Control aria-label="Amount (to the nearest dollar)" />
-        <InputGroup.Text>.00</InputGroup.Text>
-      </InputGroup>
+            <div className="floating-group mb-4">
+              <Form.Control name="url" className="floating-input" />
+              <label className="floating-label">Portfolio URL</label>
+            </div>
 
-      <InputGroup>
-        <InputGroup.Text>With textarea</InputGroup.Text>
-        <Form.Control as="textarea" aria-label="With textarea" />
-      </InputGroup>
-    </>
+            <div className="floating-group mb-4">
+              <Form.Control
+                name="message"
+                as="textarea"
+                rows={4}
+                required
+                className="floating-input textarea"
+              />
+              <label className="floating-label">Message</label>
+            </div>
+
+            <div className="text-center">
+              <Button type="submit" className="contact-btn ripple px-5 py-2">
+                Send
+              </Button>
+            </div>
+          </form>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
 

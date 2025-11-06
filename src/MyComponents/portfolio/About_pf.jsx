@@ -8,7 +8,6 @@ import "./About.css";
 function About_pf() {
   return (
     <section id="about" className="about-section py-5 mt-4">
-      {/* Soft gradient background layers */}
       <div className="bg-accent-shape shape1"></div>
       <div className="bg-accent-shape shape2"></div>
 
@@ -39,7 +38,7 @@ function About_pf() {
                 </motion.div>
               </Col>
 
-              {/* Content Section */}
+              
               <Col md={7} className="about_cont">
                 <Card.Body className="p-4">
                   <motion.h2
@@ -86,6 +85,11 @@ function About_pf() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="about-btn mt-4"
+                    onClick={() => {
+                      document.getElementById("projects")?.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     View My Work 🚀
                   </motion.button>

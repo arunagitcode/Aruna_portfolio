@@ -1,0 +1,136 @@
+.projects-container {
+  padding: 70px 20px;
+  background: linear-gradient(180deg, #f4f5fa, #e2e4ec);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #131b58;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 35px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.project-unique-card {
+  position: relative;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  border: 2px solid rgba(19, 27, 88, 0.15);
+  box-shadow: 0 8px 28px rgba(19, 27, 88, 0.15);
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+.project-unique-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 55px rgba(19, 27, 88, 0.25);
+  border-color: #6b6b9d;
+}
+
+.project-shine {
+  position: absolute;
+  top: -100%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  transition: 0.6s ease;
+}
+
+.project-unique-card:hover .project-shine {
+  top: 100%;
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #131b58;
+}
+
+.project-desc {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #363a73;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.tech-box {
+  margin: 10px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  background: #131b58;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: #6b6b9d;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.proj-live,
+.proj-code {
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+  background: #6b6b9d;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease;
+}
+
+.proj-live:hover {
+  background: #131b58;
+}
+
+.proj-code {
+  background: #363a73;
+}
+
+.proj-code:hover {
+  background: #131b58;
+}
+
+@media (max-width: 480px) {
+  .project-name {
+    font-size: 1.3rem;
+  }
+  .projects-title {
+    font-size: 2rem;
+  }
+}

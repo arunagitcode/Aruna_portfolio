@@ -1,16 +1,15 @@
 .about-section {
-  /* background: linear-gradient(135deg, #0a0a0a, #151515); */
-  background: radial-gradient(circle at top left, #1a1a2e, #16213e);
+  background: linear-gradient(180deg, #131b58 0%, #363a73 50%, #84848f 100%);
 
-  /* color: #eaeaea; */
   position: relative;
   overflow: hidden;
 }
 
-.about_cont{
+.about_cont {
   text-align: justify;
+  background-color: #fff;
 }
-/* Accent gradient blobs */
+
 .bg-accent-shape {
   position: absolute;
   width: 300px;
@@ -31,7 +30,7 @@
   background: #00bcd4;
 }
 
-/* Card Styling */
+
 .about-card {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(15px);
@@ -44,7 +43,7 @@
   transform: translateY(-5px);
 }
 
-/* Image Frame with angled edges */
+
 .image-frame {
   display: flex;
   justify-content: center;
@@ -74,26 +73,26 @@
   border-radius: 12px;
 }
 
-/* Gradient Text */
+
 .text-gradient {
   background: linear-gradient(90deg, #7b2ff7, #00bcd4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Paragraph Styling */
+
 .about-sub {
   font-size: 1.1rem;
-  /* color: #cfcfcf; */
+  
 }
 
 .about-text {
-  /* color: #b8b8b8; */
+  
   font-size: 1rem;
   line-height: 1.8;
 }
 
-/* Button */
+
 .about-btn {
   background: linear-gradient(90deg, #7b2ff7, #00bcd4);
   border: none;
@@ -109,7 +108,6 @@
   box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .angled-photo-wrapper {
     transform: rotate(0deg);

@@ -1,22 +1,18 @@
-/* ---------- Header Styles ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
 .custom-navbar {
-  /* background: rgba(15, 15, 15, 0.85); */
-  /* background: linear-gradient(135deg, #131B58, #363A73, #6B6B9D); */
-   /* background: linear-gradient(135deg, #131B58, #363A73, #6B6B9D); */
-    background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #84848F 100%);
-    height: 10vh;
+  background: linear-gradient(180deg, #131b58 0%, #363a73 50%, #84848f 100%);
+  height: 10vh;
 
   backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.4s ease;
   z-index: 999;
   padding: 0.6rem 1rem;
-
-
-  
 }
 
-/* Brand Text */
 .brand-text {
   color: #fff;
   font-size: 1.4rem;
@@ -34,7 +30,7 @@
   font-weight: 800;
 }
 
-/* Navbar Links */
+
 .nav-links .nav-link {
   color: #d0d0d0 !important;
   font-weight: 500;
@@ -48,7 +44,7 @@
   color: #00e5ff !important;
 }
 
-/* Animated underline on hover */
+
 .nav-links .nav-link::after {
   content: "";
   position: absolute;
@@ -65,7 +61,7 @@
   width: 100%;
 }
 
-/* ---------- Hire Me Button ---------- */
+
 .hire-btn {
   background: linear-gradient(90deg, #7b2ff7, #00bcd4);
   color: #fff !important;
@@ -76,7 +72,7 @@
   box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
   transition: all 0.5s ease;
   border: none;
-  /* text-transform: uppercase; */
+
   letter-spacing: 0.5px;
   text-align: center;
 }
@@ -87,7 +83,7 @@
   background: linear-gradient(90deg, #00bcd4, #7b2ff7);
 }
 
-/* ---------- Responsive Adjustments ---------- */
+
 @media (max-width: 992px) {
   .nav-links {
     text-align: center;
@@ -103,18 +99,16 @@
     margin-top: 0.8rem;
     display: inline-block;
     width: 100%;
-
   }
-.navbar-toggler{
-  background: linear-gradient(90deg, #00bcd4, #7b2ff7);
-  
-}
+  .navbar-toggler {
+    background: linear-gradient(90deg, #00bcd4, #7b2ff7);
+  }
   .brand-text {
     font-size: 1.2rem;
   }
 }
 
-/* ---------- Smooth Scroll + Subtle Shadow ---------- */
+
 .custom-navbar.scrolled {
   background: rgba(10, 10, 10, 0.95);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);

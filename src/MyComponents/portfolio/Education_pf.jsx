@@ -23,7 +23,7 @@ function Education_pf() {
   ];
 
   return (
-    <section className="edu-section mt-4">
+    <section id="education" className="edu-section mt-4">
       <h2 className="edu-title">🎓 Education</h2>
 
       <div className="edu-grid">

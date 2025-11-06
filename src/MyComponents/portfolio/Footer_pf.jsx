@@ -49,7 +49,7 @@ function Footer_pf() {
           </a>
         </div>
 
-        <p className="footer-copy">© 2025 Aruna. All rights reserved.</p>
+        <p className="footer-copy">© 2025 Atchiyamma. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -1,5 +1,7 @@
 .footer-section {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  
+    background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #84848F 100%);
+
   color: #fff;
   padding: 60px 0 40px;
   text-align: center;
@@ -50,7 +52,7 @@
   margin-top: 20px;
 }
 
-/* --- Mobile Responsive --- */
+
 @media (max-width: 768px) {
   .footer-logo {
     font-size: 1.5rem;

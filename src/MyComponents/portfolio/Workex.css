@@ -1,8 +1,8 @@
 .timeline-section {
-  background: radial-gradient(circle at top left, #101020, #0d0d1a);
+    background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #131B58 100%);
+
   color: #fff;
   padding: 4rem 1rem;
-  /* border-radius: 20px; */
 }
 
 .timeline-title {
@@ -16,7 +16,6 @@
   letter-spacing: 1px;
 }
 
-/* Timeline base */
 .timeline-container {
   position: relative;
   margin: 0 auto;
@@ -25,7 +24,7 @@
   max-width: 900px;
 }
 
-/* Timeline item */
+
 .timeline-item {
   position: relative;
   margin-bottom: 3rem;
@@ -42,7 +41,7 @@
   box-shadow: 0 0 10px rgba(0, 198, 255, 0.8);
 } */
 
-/* Card design */
+
 .timeline-content {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
@@ -100,7 +99,7 @@
   font-weight: 500;
 }
 
-/* ✅ Mobile responsive layout */
+
 @media (max-width: 768px) {
   .timeline-section {
     padding: 3rem 1rem;

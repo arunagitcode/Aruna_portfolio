@@ -16,11 +16,9 @@ function Skills_pf() {
   ];
 
   return (
-    <section className="skills-section mt-4">
+    <section id="skills" className="skills-section mt-4">
       <Container>
-        <h2 className="skills-title text-center mb-5">
-          💡 My <span>Technical Skills</span>
-        </h2>
+        <h2 className="skills-title text-center mb-5">My Technical Skills</h2>
         <Row className="g-4 justify-content-center">
           {skills.map((skill, index) => (
             <Col xs={6} sm={4} md={3} key={index}>
@@ -29,7 +27,9 @@ function Skills_pf() {
                   <div
                     className="bar"
                     style={{
-                      background: `conic-gradient(${skill.color} ${skill.level * 3.6}deg, #222 0deg)`,
+                      background: `conic-gradient(${skill.color} ${
+                        skill.level * 3.6
+                      }deg, #222 0deg)`,
                     }}
                   ></div>
                   <div className="box">

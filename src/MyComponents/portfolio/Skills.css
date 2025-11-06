@@ -1,6 +1,7 @@
 .skills-section {
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #84848F 100%);
+
   color: #fff;
   text-align: center;
 }
@@ -8,9 +9,8 @@
 .skills-title {
   font-size: 2.3rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
+  
 }
 
 .skills-title span {
@@ -33,7 +33,6 @@
   box-shadow: 0 0 20px var(--clr);
 }
 
-/* Circular progress */
 .circle {
   width: 100px;
   height: 100px;
@@ -73,7 +72,7 @@
   color: #eaeaea;
 }
 
-/* ✨ Hover Glow Effect */
+
 .skill-card::before {
   content: "";
   position: absolute;
@@ -89,7 +88,7 @@
   opacity: 1;
 }
 
-/* 🌐 Responsive */
+
 @media (max-width: 768px) {
   .skills-title {
     font-size: 1.8rem;
