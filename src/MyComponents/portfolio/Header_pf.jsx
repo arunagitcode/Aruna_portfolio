@@ -6,7 +6,7 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 
 function Header_pf() {
-  const expand = "lg";
+  const expand = "sm";
 
   return (
     <Navbar
@@ -30,7 +30,7 @@ function Header_pf() {
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
-          className="bg-dark text-white"
+          className="bg-dark text-white w-75 opacity-75"
         >
           <Offcanvas.Header closeButton closeVariant="white">
             <Offcanvas.Title
