@@ -1,13 +1,18 @@
 .about-section {
-  background: linear-gradient(180deg, #131b58 0%, #363a73 50%, #84848f 100%);
-
+  background-color: black;
   position: relative;
   overflow: hidden;
 }
 
 .about_cont {
   text-align: justify;
-  background-color: #fff;
+}
+
+.card_body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bg-accent-shape {
@@ -27,14 +32,10 @@
 .shape2 {
   bottom: -100px;
   right: -80px;
-  background: #00bcd4;
+  background: #7b2ff7;
 }
 
-
 .about-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 2;
   position: relative;
   transition: transform 0.3s ease;
@@ -42,7 +43,6 @@
 .about-card:hover {
   transform: translateY(-5px);
 }
-
 
 .image-frame {
   display: flex;
@@ -58,11 +58,8 @@
   border-radius: 15px;
   overflow: hidden;
   transform: rotate(-3deg);
-  box-shadow: 0 0 25px rgba(0, 188, 212, 0.4);
   border: 2px solid transparent;
-  background: linear-gradient(90deg, #7b2ff7, #00bcd4) border-box;
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  background: linear-gradient(90deg, #7b2ff7,#7b2ff7 ) border-box;
 }
 
 .angled-photo {
@@ -73,28 +70,23 @@
   border-radius: 12px;
 }
 
-
 .text-gradient {
-  background: linear-gradient(90deg, #7b2ff7, #00bcd4);
+  background: linear-gradient(90deg, #7b2ff7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-
 .about-sub {
   font-size: 1.1rem;
-  
 }
 
 .about-text {
-  
   font-size: 1rem;
   line-height: 1.8;
 }
 
-
 .about-btn {
-  background: linear-gradient(90deg, #7b2ff7, #00bcd4);
+  background: linear-gradient(90deg, #7b2ff7);
   border: none;
   color: #fff;
   padding: 0.7rem 1.6rem;
@@ -105,8 +97,13 @@
 }
 .about-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
 }
+.about-card {
+  background-color: transparent !important;
+  box-shadow: none; 
+  color: #fff !important;
+}
+
 
 @media (max-width: 768px) {
   .angled-photo-wrapper {
@@ -122,4 +119,7 @@
   .about-btn {
     margin-top: 1rem;
   }
+  .about-image-col{
+  display: none;
+}
 }

@@ -4,7 +4,7 @@ import "./Footer.css";
 
 function Footer_pf() {
   return (
-    <footer className="footer-section mt-4">
+    <footer className="footer-section ">
       <div className="footer-container">
         <h2 className="footer-logo">
           Atchiyamma <span>Portfolio</span>
@@ -39,14 +39,14 @@ function Footer_pf() {
           >
             <FaTwitter />
           </a>
-          <a
+          {/* <a
             href="https://instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link instagram"
           >
             <FaInstagram />
-          </a>
+          </a> */}
         </div>
 
         <p className="footer-copy">© 2025 Atchiyamma. All rights reserved.</p>

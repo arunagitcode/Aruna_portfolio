@@ -1,37 +1,39 @@
-/* ---------- Hero Section ---------- */
+
 .carousel_cont {
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at top left, #1a1a2e, #16213e);
-    
-
+  background-color: black;
   color: #fff;
   overflow: hidden;
   padding: 8rem 2rem 4rem; 
   box-sizing: border-box;
 }
 
-
 .hero-content {
   max-width: 600px;
   text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-content h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   line-height: 1.3;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .highlight {
-  background: linear-gradient(90deg, #00bcd4, #7b2ff7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg,  #7b2ff7);
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -44,22 +46,19 @@
 }
 
 .btn-gradient {
-  background: linear-gradient(90deg, #7b2ff7, #00bcd4);
+  background-color: #7b2ff7;
   border: none;
-  padding: 0.9rem 2.2rem;
+  padding: 0.9rem 0;
   border-radius: 30px;
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
 }
 
 .btn-gradient:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.6);
 }
-
 
 .hero-image-wrapper {
   position: relative;
@@ -75,7 +74,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: conic-gradient(#00bcd4, #7b2ff7, #ff00c8, #00bcd4,#fff 95%);
+  background: conic-gradient( #7b2ff7,#fff 98%);
   animation: spin 6s linear infinite;
   z-index: 1;
   filter: drop-shadow(0 0 10px rgba(123, 47, 247, 0.6));
@@ -106,7 +105,6 @@
   transform: scale(1.05);
 }
 
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -116,7 +114,6 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .carousel_cont {
     padding-top: 7rem; 
@@ -124,7 +121,8 @@
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1rem;
+    line-height: 1;
   }
 
   .hero-content p {

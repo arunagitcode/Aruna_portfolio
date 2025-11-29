@@ -23,7 +23,7 @@ function Header_pf() {
 
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${expand}`}
-          className="text-white"
+          // className="text-white"
         />
 
         <Navbar.Offcanvas
@@ -50,9 +50,9 @@ function Header_pf() {
 
              
 
-              <Nav.Link href="#contact" className="hire-btn">
+              {/* <Nav.Link href="#contact" className="hire-btn">
                 Hire Me
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

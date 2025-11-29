@@ -1,7 +1,5 @@
 .footer-section {
-  
-    background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #84848F 100%);
-
+  background-color: rgb(31, 30, 30);
   color: #fff;
   padding: 60px 0 40px;
   text-align: center;
@@ -16,7 +14,7 @@
 }
 
 .footer-logo span {
-  color: #38bdf8;
+  color: #7b2ff7;
 }
 
 .footer-tagline {
@@ -41,7 +39,7 @@
 
 .social-link:hover {
   transform: translateY(-5px);
-  color: #38bdf8;
+  color: #7b2ff7;
 }
 
 .footer-copy {

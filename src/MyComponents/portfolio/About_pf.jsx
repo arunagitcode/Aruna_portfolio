@@ -7,7 +7,7 @@ import "./About.css";
 
 function About_pf() {
   return (
-    <section id="about" className="about-section py-5 mt-4">
+    <section id="about" className="about-section py-4 ">
       <div className="bg-accent-shape shape1"></div>
       <div className="bg-accent-shape shape2"></div>
 
@@ -20,7 +20,6 @@ function About_pf() {
         >
           <Card className="about-card shadow-lg border-0 rounded-4 overflow-hidden">
             <Row className="align-items-center g-0">
-              {/* Image Section */}
               <Col md={5} className="about-image-col text-center">
                 <motion.div
                   initial={{ x: -50, opacity: 0 }}
@@ -38,9 +37,8 @@ function About_pf() {
                 </motion.div>
               </Col>
 
-              
               <Col md={7} className="about_cont">
-                <Card.Body className="p-4">
+                <Card.Body className="p-4 card_body">
                   <motion.h2
                     initial={{ x: 40, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -91,7 +89,7 @@ function About_pf() {
                       });
                     }}
                   >
-                    View My Work 🚀
+                    View My Work
                   </motion.button>
                 </Card.Body>
               </Col>

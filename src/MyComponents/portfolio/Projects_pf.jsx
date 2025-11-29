@@ -4,13 +4,16 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projectsData = [
   {
-    title: "Portfolio Website",
-    description: "A modern portfolio built with React, Bootstrap, animations & EmailJS.",
-    tech: ["React", "Bootstrap", "CSS","EmailJS"],
-    live: "https://atchiyamma-portfolio.netlify.app/",
+    image:"assets/furniture_home_sc.png",
+    title: "Furniture e-commerce",
+    description: "A modern website built with javascript, Bootstrap, animations & EmailJS",
+    tech: ["javascript", "Bootstrap", "CSS","EmailJS"],
+    live: "https://furniturejsproject.netlify.app/",
     github: "https://github.com/arunagitcode/Aruna_portfolio"
   },
   {
+    image:"assets/furniture_home_sc.png",
+
     title: "Under Process",
     description: "Live weather visualization with API + animated temperature cards.",
     tech: ["JavaScript", "API", "CSS"],
@@ -18,6 +21,8 @@ const projectsData = [
     github: "#"
   },
   {
+    image:"assets/furniture_home_sc.png",
+
     title: "Under Process",
     description: "Frontend UI clone with hover trailers, categories & dynamic rows.",
     tech: ["React", "Bootstrap", "CSS"],
@@ -28,15 +33,18 @@ const projectsData = [
 
 function Projects_pf() {
   return (
-    <div className="projects-container mt-4" id="projects">
-      <h1 className="projects-title">My Projects</h1>
+    <div className="projects-container" id="projects">
+      <h1 className="projects-title ">My Projects</h1>
 
       <div className="projects-grid">
         {projectsData.map((project, index) => (
           <div className="project-unique-card" key={index}>
             <div className="project-shine"></div>
 
-            <h2 className="project-name">{project.title}</h2>
+            <div>
+              <img src={project.image} alt="project_homepage" className="project_image" />
+            </div>
+            <h2 className="project-name mt-2">{project.title}</h2>
             <p className="project-desc">{project.description}</p>
 
             <div className="tech-box">

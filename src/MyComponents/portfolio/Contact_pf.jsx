@@ -30,7 +30,7 @@ function Contact_pf() {
   };
 
   return (
-    <div className="contact-outer mt-4" id="contact">
+    <div className="contact-outer" id="contact">
       <h1 className="text-center contact-title">Get in touch with me</h1>
 
       <Card className="contact-card p-4 mt-4">
@@ -51,10 +51,10 @@ function Contact_pf() {
               <label className="floating-label">Your Email</label>
             </div>
 
-            <div className="floating-group mb-4">
+            {/* <div className="floating-group mb-4">
               <Form.Control name="url" className="floating-input" />
               <label className="floating-label">Portfolio URL</label>
-            </div>
+            </div> */}
 
             <div className="floating-group mb-4">
               <Form.Control

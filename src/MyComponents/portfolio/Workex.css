@@ -1,15 +1,14 @@
 .timeline-section {
-    background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #131B58 100%);
-
+  background-color: black;
   color: #fff;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .timeline-title {
   font-family: "Poppins", sans-serif;
   font-size: 2.3rem;
-  margin-bottom: 3rem;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #7b2ff7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -20,42 +19,37 @@
   position: relative;
   margin: 0 auto;
   padding-left: 20px;
-  border-left: 3px solid rgba(0, 198, 255, 0.5);
+  border-left: 3px solid #7b2ff7;
   max-width: 900px;
 }
-
 
 .timeline-item {
   position: relative;
   margin-bottom: 3rem;
 }
 
-/* .timeline-dot {
+.timeline-dot {
   position: absolute;
-  top: 8px;
-  left: -11px;
+  left: -30px;
   width: 18px;
   height: 18px;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #7b2ff7);
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 198, 255, 0.8);
-} */
-
+  box-shadow: 0 0 10px #9d73e0;
+}
 
 .timeline-content {
-  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 150, 255, 0.2);
+  border: 1px solid #3b3b3c;
   padding: 1.5rem 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   text-align: justify;
 }
 
 .timeline-content:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0, 188, 212, 0.4);
+  box-shadow: 0 12px 25px #7b2ff7;
 }
 
 .timeline-content h3 {
@@ -65,7 +59,7 @@
 }
 
 .timeline-content h5 {
-  color: #00c6ff;
+  color: #7b2ff7;
   font-weight: 500;
   margin-bottom: 0.4rem;
 }
@@ -95,16 +89,16 @@
 .tech {
   margin-top: 1rem;
   font-size: 0.95rem;
-  color: #89cff0;
+  color: #7b2ff7;
   font-weight: 500;
 }
 
-
 @media (max-width: 768px) {
-  .timeline-section {
-    padding: 3rem 1rem;
-  }
+  
 
+  .timeline-section{
+    padding: 1rem 1rem;
+  }
   .timeline-container {
     border-left: none;
     padding-left: 0;
@@ -115,14 +109,14 @@
   }
 
   .timeline-content {
-    border-left: 4px solid #00c6ff;
+    border-left: 4px solid #7b2ff7;
     padding-left: 1.2rem;
     margin-left: 0.5rem;
   }
 
   .timeline-content:hover {
     transform: none;
-    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
+    box-shadow: 0 8px 20px #ae82f4;
   }
 
   .timeline-content h3 {
@@ -131,5 +125,9 @@
 
   .timeline-content ul li {
     font-size: 0.95rem;
+  }
+
+  .timeline-title {
+    font-size: 1.7rem;
   }
 }

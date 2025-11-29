@@ -1,7 +1,6 @@
 .skills-section {
-  padding: 4rem 1rem;
-    background: linear-gradient(180deg, #131B58 0%, #363A73 50%, #84848F 100%);
-
+  padding: 1rem 1rem;
+  background-color: black;
   color: #fff;
   text-align: center;
 }
@@ -9,8 +8,7 @@
 .skills-title {
   font-size: 2.3rem;
   font-weight: 700;
-  color: #fff;
-  
+  color: #7b2ff7;
 }
 
 .skills-title span {
@@ -50,13 +48,13 @@
 }
 
 .box {
-  width: 80px;
-  height: 80px;
+  width: 88px;    
+  height: 88px;    
   background: #111;
   border-radius: 50%;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 6px;        
+  left: 6px;       
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +69,6 @@
   letter-spacing: 0.5px;
   color: #eaeaea;
 }
-
 
 .skill-card::before {
   content: "";
@@ -88,7 +85,6 @@
   opacity: 1;
 }
 
-
 @media (max-width: 768px) {
   .skills-title {
     font-size: 1.8rem;
@@ -99,13 +95,17 @@
     height: 80px;
   }
 
-  .box {
-    width: 60px;
-    height: 60px;
-    font-size: 0.9rem;
+ .box {
+    width: 68px;
+    height: 68px;
+    top: 6px;
+    left: 6px;
   }
 
   .skill-card h4 {
     font-size: 0.85rem;
+  }
+  .skills-section{
+    padding: 1rem;
   }
 }

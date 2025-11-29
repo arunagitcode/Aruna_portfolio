@@ -21,24 +21,12 @@ function Hero_section() {
         </Col>
         <Col className="text-center text-md-start">
           <div className="hero-content">
+            <h1>Atchiyamma Cheepurupalli</h1>
+
             <h1>Frontend Developer</h1>
-            <p>
-              Hi, I'm <strong>Atchiyamma </strong>
-              <strong>Frontend Developer </strong>2 years of relevant IT
-              experience (4.10 years of overall professional experience) in
-              building responsive, high-performance web applications using{" "}
-              <strong>
-                React.js, JavaScript, Bootstrap, and Tailwind CSS .
-              </strong>
-              <br />
-              <br />
-              Currently enhancing full-stack proficiency through{" "}
-              <strong>MERN Stack</strong>
-              (MongoDB, Express.js, React, Node.js) projects
-            </p>
 
             <button
-              className="btn-gradient mt-3 w-100"
+              className="btn-gradient mt-3 w-50"
               onClick={() => {
                 const element = document.getElementById("about");
                 if (element) {
